@@ -1,4 +1,5 @@
 import Logo from "./Logo";
+import Form from "./Form";
 
 const Advert = () => {
   return (
@@ -12,6 +13,7 @@ const Advert = () => {
         Add your email below to stay up-to-date with announcements and our
         launch deals.
       </p>
+      <Form />
     </section>
   );
 };
