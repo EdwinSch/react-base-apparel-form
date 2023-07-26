@@ -1,7 +1,13 @@
+import Advert from "./components/Advert";
+import Photo from "./components/Photo";
+
 function App() {
   return (
     <>
-      <main></main>
+      <main>
+        <Advert />
+        <Photo />
+      </main>
     </>
   );
 }
