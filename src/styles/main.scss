@@ -37,12 +37,32 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+//Response Query
+@media only screen and (max-width: 1210px) {
+  body {
+    align-items: flex-start;
+  }
+}
+
 main {
+  // border: $inspect;
   background: $secondary;
   width: 1440px;
   max-width: 100vw;
   height: 800px;
   display: flex;
+  position: relative;
+}
+
+//Response Query
+@media only screen and (max-width: 1210px) {
+  main {
+    flex-direction: column-reverse;
+    max-width: 375px;
+    // min-width: 375px;
+    // width: 100%;
+  }
 }
 
 //--- Advert styles
@@ -53,7 +73,6 @@ main {
 
   //Logo
   .logo-wrapper {
-    // margin-bottom: 136px;
     margin-bottom: 100px;
   }
 
@@ -84,9 +103,46 @@ main {
   }
 }
 
+//Response Query
+@media only screen and (max-width: 1210px) {
+  .advert-container {
+    padding: 0 32px;
+
+    //Logo
+    .logo-wrapper {
+      margin-bottom: 0;
+      position: absolute;
+      top: 32px;
+      left: 32px;
+
+      svg {
+        width: 100px;
+      }
+    }
+
+    //H1
+    h1 {
+      margin-bottom: 30px;
+      margin-top: 65px;
+      font-size: 2.5rem;
+      line-height: 2.625rem;
+      letter-spacing: 0.625rem;
+      text-align: center;
+    }
+    //Text
+    p {
+      margin-bottom: 30px;
+      // max-width: auto;
+      font-size: 0.875rem;
+      line-height: 1.375rem;
+      text-align: center;
+    }
+  }
+}
+
 // --- Form styles
 form {
-  position: absolute;
+  position: relative;
 
   //Input fields
   .email {
@@ -109,7 +165,7 @@ form {
   }
   button {
     position: absolute;
-    right: 0;
+    left: 350px;
     width: 100px;
     height: 56px;
     border-radius: 28px;
@@ -128,6 +184,31 @@ form {
   }
 }
 
+//Response Query
+@media only screen and (max-width: 1210px) {
+  form {
+    position: relative;
+
+    //Input fields
+    .email {
+      width: 100%;
+      height: 48px;
+      padding: 0 32px;
+      font-size: 0.875rem;
+    }
+    button {
+      position: absolute;
+      left: 250px;
+      width: 64px;
+      height: 48px;
+    }
+    .error-message {
+      margin: 4px 0 0 20px;
+      text-align: left;
+    }
+  }
+}
+
 //--- Photo styles
 .photo-wrapper {
   img {
@@ -135,4 +216,22 @@ form {
     height: 100%;
     object-fit: cover;
   }
+}
+
+//Response Query
+@media only screen and (max-width: 1210px) {
+  .photo-wrapper {
+    margin-top: 90px;
+
+    img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      object-position: top;
+    }
+  }
+}
+
+//--- Mobile Responsive
+@media only screen and (max-width: 1210px) {
 }
