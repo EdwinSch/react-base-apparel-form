@@ -1,0 +1,34 @@
+// Init
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+.img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+// Variables
+$font: "Josefin Sans", sans-serif;
+
+$primary: #6daca1;
+$secondary: #66a3a8;
+$tertiary: #94b3c2;
+$text: #1f2322;
+$accent: #a1727a;
+
+// Styles
+body {
+  font-family: $font;
+}
