@@ -62,7 +62,7 @@ main {
     max-width: 500px;
     min-width: 275px;
     width: 100%;
-    height: 100vh;
+    height: fit-content;
   }
 }
 
@@ -197,8 +197,6 @@ form {
 //Response Query
 @media only screen and (max-width: 1210px) {
   form {
-    //  max-width: 440px;
-
     .wrapper {
       //Input fields
       .email {
@@ -216,6 +214,26 @@ form {
       margin: 4px 0 0 20px;
       text-align: left;
     }
+  }
+}
+
+//--- Socials styles
+.socials-container {
+  margin: 30px 0;
+
+  a {
+    font-size: 25px;
+    color: $primary;
+    margin-right: 8px;
+  }
+  a:hover {
+    color: $hover;
+  }
+}
+
+@media only screen and (max-width: 1210px) {
+  .socials-container {
+    text-align: center;
   }
 }
 

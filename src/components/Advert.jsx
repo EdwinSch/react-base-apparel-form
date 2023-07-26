@@ -1,5 +1,6 @@
 import Logo from "./Logo";
 import Form from "./Form";
+import Socials from "./Socials";
 
 const Advert = () => {
   return (
@@ -14,6 +15,7 @@ const Advert = () => {
         launch deals.
       </p>
       <Form />
+      <Socials />
     </section>
   );
 };
