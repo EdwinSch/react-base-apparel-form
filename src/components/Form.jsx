@@ -28,16 +28,19 @@ const Form = () => {
   // Component render
   return (
     <form onSubmit={handleSubmit} noValidate>
-      <input
-        className={validation ? "email" : "email error-state"}
-        type="email"
-        name="email"
-        placeholder="Email Address"
-        ref={input}
-      />
-      <button type="submit">
-        <BsChevronRight />
-      </button>
+      <div className="wrapper">
+        <input
+          className={validation ? "email" : "email error-state"}
+          type="email"
+          name="email"
+          placeholder="Email Address"
+          ref={input}
+        />
+        <button type="submit">
+          <BsChevronRight />
+        </button>
+      </div>
+
       {validation || (
         <p className="error-message">Please provide a valid email</p>
       )}
