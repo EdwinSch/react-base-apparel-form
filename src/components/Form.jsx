@@ -36,7 +36,7 @@ const Form = () => {
           placeholder="Email Address"
           ref={input}
         />
-        <button type="submit">
+        <button type="submit" aria-label="send form button">
           <BsChevronRight />
         </button>
       </div>
