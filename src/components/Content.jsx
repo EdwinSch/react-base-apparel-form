@@ -2,7 +2,7 @@ import Logo from "./Logo";
 import Form from "./Form";
 import Socials from "./Socials";
 
-const Advert = () => {
+const Content = () => {
   return (
     <section className="advert-container">
       <Logo />
@@ -20,4 +20,4 @@ const Advert = () => {
   );
 };
 
-export default Advert;
+export default Content;

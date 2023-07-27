@@ -1,11 +1,11 @@
-import Advert from "./components/Advert";
+import Content from "./components/Content";
 import Photo from "./components/Photo";
 
 function App() {
   return (
     <>
       <main>
-        <Advert />
+        <Content />
         <Photo />
       </main>
     </>
